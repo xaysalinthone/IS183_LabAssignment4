@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+
+            }
+            body, html{
+                width: 100w;
+                height: 100vh;
+            }
+            h2{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            /*.box-shadow {
+                drop-shadow: (16px 16px 10px black);
+                /*-webkit-box-shadow: -1px 7px 23px -10px #rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -1px 7px 23px -10px #rgba(0, 0, 0, 0.75);
+                box-shadow: -1px 7px 23px -10px #rgba(0, 0, 0, 0.75);
+            }*/
+            .main-container-grid{
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr; /*represent frequency and for each r*/
+                height: 100%;
+                grid-row-gap: 1em;
+            }
+            .r1, .r3{
+                background-color: #CCC;
+                padding: 1em;
+                align-items: center;
+            }
+            .r3{
+                align-items: center;
+            }
+            .r2{
+                height: 100%;
+                background-color: #f1f1f1
+
+            }
+            .three-column{
+                display: grid;
+                grid-template-columns: 2fr 8fr 3fr;
+                background-color: #FFF;
+                grid-column-gap: 1em;
+            }
+            .c1{
+                min-width: 200px;
+            }
+            .c1, .c3{
+                background-color: #f4f4f4;
+            }
+            .txt-center{
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid #a8a7a7; 
+                padding-bottom: 15px;
+            }
+            .left-nav{
+                list-style-type: none;
+            }
+            .left-nav > li > a {
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #f4f4f4;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.7s;
+            }
+            .left-nav > li > a:hover{
+                background-color: #8d8c8c;
+            }
+            .c2 {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: 1fr 1fr 3fr;
+                grid-auto-rows: min-content;
+
+            }
+            .h2-content{
+                grid-column: 1 / 5;
+                height: 22px;
+                width: 100%
+             }
+             .c2 > img {
+                 width: 100px;
+                 align-self: center;
+                 max-height: 200px;
+             }
+
+        </style>
+    </head>
+    <body class = "main-container-grid">
+        <div class = "r1">
+            <h2> Xay S</h2>
+        </div>
+        <div class= "r2 three-column">
+            <div class= "c1 box-shadow">
+                <h2 class="txt-center">Navigation</h2>
+                <ul class="left-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+
+
+
+                </ul>
+            </div>
+            <div class= "c2">
+                <h2 class="txt-center h2-content">Recent Product</h2>
+                <img class= "box-shadow" src="./img/1.jpg">
+                <img class= "box-shadow" src="./img/2.jpg">
+                <img class= "box-shadow" src="./img/3.jpg">
+                <img class= "box-shadow" src="./img/4.jpg">
+                <img class= "box-shadow" src="./img/5.jpg">
+                <img class= "box-shadow" src="./img/6.jpg">
+                <img class= "box-shadow" src="./img/7.jpg">
+                <img class= "box-shadow" src="./img/8.jpg">
+                <img class= "box-shadow" src="./img/9.jpg">
+                <img class= "box-shadow" src="./img/10.jpg">
+                <img class= "box-shadow" src="./img/11.jpg">
+                <img class= "box-shadow" src="./img/12.jpg">
+            </div>
+            
+    
+            <div class= "c3 box-shadow">
+                <h2 class="txt-center">Recent Product</h2>
+            </div>
+        </div>
+        <div class= "r3">
+            Copyright 2021 - Created by Xay S
+        </div>
+    </body>
+</html>
