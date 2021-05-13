@@ -7,4 +7,3 @@ var Contact = (function () {
     return Contact;
 })();
 var contact = new Contact();
-//# sourceMappingURL=contact.js.map

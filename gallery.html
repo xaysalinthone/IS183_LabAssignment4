@@ -42,12 +42,11 @@
                 background-color: #f1f1f1
 
             }
-            .one-column{
-                /*display: grid;*/
-                grid-template-columns: 1fr, 1fr;
+            .three-column{
+                display: grid;
+                grid-template-columns: 2fr 8fr 3fr;
                 background-color: #FFF;
                 grid-column-gap: 1em;
-                grid-row-gap: 1em;
             }
             .c1{
                 min-width: 200px;
@@ -77,12 +76,9 @@
             }
             .c2 {
                 display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(3,1fr);
-                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: 1fr 1fr 3fr;
                 grid-auto-rows: min-content;
-                grid-column-gap: 1em;
-
 
             }
             .h2-content{
@@ -96,19 +92,59 @@
                  max-height: 200px;
              }
 
+             .c2-first-row {
+                 grid-column: 1 / 5;
+             }
+
+             .grid-button{
+                 padding: 6px 12px;
+                 background-color: #CCC;
+                 float: right;
+             }
+
         </style>
     </head>
     <body class = "main-container-grid">
         <div class = "r1">
             <h2> Xay S</h2>
         </div>
-        <div class= "r2 one-column">
+        <div class= "r2 three-column">
+            <div class= "c1 box-shadow">
+                <h2 class="txt-center">Navigation</h2>
+                <ul class="left-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact-us.html">Contact</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./login.html">Login</a></li>
+
+
+
+                </ul>
+            </div>
             <div class= "c2">
-                <h2>Company Information</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem IpLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem IpLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem IpLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class = "c2-first-row">
+                    <a href="./gallery.html" class = "grid-button">Grid View</a>
+                    <h2 class="txt-center h2-content">Gallery</h2>
+                </div>
+               
+                <img class= "box-shadow" src="./img/1.jpg">
+                <img class= "box-shadow" src="./img/2.jpg">
+                <img class= "box-shadow" src="./img/3.jpg">
+                <img class= "box-shadow" src="./img/4.jpg">
+                <img class= "box-shadow" src="./img/5.jpg">
+                <img class= "box-shadow" src="./img/6.jpg">
+                <img class= "box-shadow" src="./img/7.jpg">
+                <img class= "box-shadow" src="./img/8.jpg">
+                <img class= "box-shadow" src="./img/9.jpg">
+                <img class= "box-shadow" src="./img/10.jpg">
+                <img class= "box-shadow" src="./img/11.jpg">
+                <img class= "box-shadow" src="./img/12.jpg">
+            </div>
             
+    
+            <div class= "c3 box-shadow">
+                <h2 class="txt-center">Recent Product</h2>
             </div>
         </div>
         <div class= "r3">

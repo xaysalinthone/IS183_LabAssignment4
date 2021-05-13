@@ -1,1 +1,0 @@
-{"version":3,"file":"contact.js","sourceRoot":"","sources":["../contact.ts"],"names":["Contact","Contact.constructor","Contact.goToHome"],"mappings":"AACA;IAGIA;IAEAC,CAACA;IAEDD,0BAAQA,GAARA;QACIE,MAAMA,CAACA,QAAQA,CAACA,IAAIA,GAAGA,YAAYA,CAACA;IACxCA,CAACA;IACLF,cAACA;AAADA,CAACA,AAVD,IAUC;AAED,IAAM,OAAO,GAAG,IAAI,OAAO,EAAE,CAAC"}
